@@ -1,57 +1,74 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurning Itu Adalah Marga</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Gurning Itu Adalah Marga</h1>
-    </header>
-
-    <main>
-        <article>
-            <h2>Asal Usul Marga Gurning</h2>
-            <p>Selamat datang di website informasi silsilah dan sejarah Marga Gurning.</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 GurningItuAdalahMarga</p>
-    </footer>
-</body>
-</html>
-/* Tambahan untuk mempercantik teks */
-.konten-utama {
+/* Mengatur tampilan dasar seluruh halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    /* Warna latar belakang asap putih */
+    background-color: #f5f5f5; 
     color: #333;
-    padding: 10px;
 }
 
-h2, h3 {
+/* Bagian Kepala Screen (Header) */
+header {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
     color: #2c3e50;
-    border-left: 5px solid #2c3e50;
-    padding-left: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.highlight-box {
-    background-color: #e8f4f8;
-    padding: 15px;
+/* Garis pembatas di bawah judul kepala screen */
+.header-line {
+    width: 50%;
+    height: 4px;
+    background-color: #c0392b; /* Warna merah gelap yang elegan */
+    border: none;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Mengatur area konten utama */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Konten di atas box putih agar kontras */
     border-radius: 8px;
-    border: 1px solid #b3d7e5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.konten-utama h2 {
+    color: #c0392b;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.konten-utama h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+}
+
+/* Kotak sorotan untuk fokus silsilah */
+.highlight-box {
+    background-color: #fdf2f2;
+    padding: 20px;
+    border-left: 5px solid #c0392b;
     margin: 20px 0;
+    border-radius: 0 5px 5px 0;
 }
 
-ul, ol {
-    margin-bottom: 20px;
-}
-
+/* Bagian kaki (Footer) */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #333;
-    color: white;
-    margin-top: 40px;
+    padding: 30px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
 }
